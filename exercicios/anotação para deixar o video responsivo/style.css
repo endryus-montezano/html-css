@@ -1,0 +1,17 @@
+#video{
+    background-color: #52866A;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.404);
+    padding-bottom:40%;
+    position: relative;
+}
+
+#video > iframe{
+    position: absolute;
+    top: 5%; /*vc mexe o video para cima, é uma ganbiarra para ir arrumando o video onde quiser*/
+    left: 5%; /*para o lado esquerdo*/
+    width: 90%; /*muda o tamanho dele*/
+    height: 90%; /*vc aumenta o tamanho do video*/
+}

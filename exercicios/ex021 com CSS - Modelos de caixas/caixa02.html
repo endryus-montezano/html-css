@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(146, 146, 146);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black; /* SOMBRA/primeira é (deslocamento horizontal 'direita e esquerda') segund é (deslocamento vertical 'para cima e para baixo') terceita é (espalhamento)*/
+
+            /* nao usar uma sombra forte, sempre usar uma sombra descreta*/
+
+            /*box-shadow: inset; é sombra para fora da caixa*/
+
+            /*text-shadow: é sombra no texto*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; /*borda arredondada, ela tem 4 elementos 'border-radius: 10px 10px 10px 10px' (cima esquerda, cima direita, baixo direita, baixo esquerda) mesma regra do padding, se for usar 2 elementos 'border-radius: 1px 1px' ela segue a regra da margin (pimeira muda cima esquerda e baixo direita) e (segunda muda cima direita e baixo esquerda)*/
+
+            /*se adicionar uma sombra no border-radius ela vai ser do formato da borda*/
+        }
+        article{
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: rgb(190, 189, 189);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin:0;
+        }
+        footer > p{
+            margin: 0px;
+
+        }
+        /* um exemplo de bola
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        */    
+    </style>
+</head>
+<body>
+    <!--ESTAS TAGS É COMO SE FOSSEM UMA <DIV>, sao div especiais, sao semanticas(grouping tags)-->
+    <header><!--cabeçalho-->
+        <h1>meu site</h1>
+        <nav><!--para criar menus(para navegação)-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main><!--conteudo principal-->
+        <section id="assuntos">
+            <p>esportes politica tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article><!--outra tag semantica(Define a área onde há um artigo, texto, redação, conteúdo e etc)-->
+                <h2>noticias sobre o brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In perspiciatis eligendi beatae laborum, temporibus illum libero aspernatur odit natus! Quas ea possimus voluptatem magni delectus. Debitis at porro molestias magnam.</p>
+                <aside><!--conteudo periferico ao artigo/relativo ao artigo-->
+                    <p>artigo escrito por jose da silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+
+    <footer><!--rodapé-->
+        <p>desenvolvido pelo cursoemvideo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

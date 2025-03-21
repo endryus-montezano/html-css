@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinámica</h1><!--imagem que vai carregando de acordo com a largura da tela, a largura da tela de um celular é diferente da tela de um notbook e a tela do not é diferente da largura de uma tela de pc, por isso é imoportante imagem dinámica no site-->
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e díminua o tamanho do seu navegador.</p>
+    <!--a tag PICTURE é uma ferramenta nova no HTML5 para ajustar imagens no site para ajustar a largura da imagem em dispositivos diferetes-->
+    <picture><!--o source a base é a imagem padrao que eu quero carregar, acima dele eu coloco o source na ordem certa, nunca bote uma imagem menor embaixo, prestar atenção na ordem, se inverter nao funciona as imagens-->
+        <source media="(max-width: 750px)" srcset="imagens/fotoP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotoM.png" type="image/png">
+        <img src="imagens/fotoG.png" alt="foto flexivel">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <audio src="midias/Fuzz Buzz - Jeremy Korpas.mp3" controls autoplay></audio>
+    <!--fomratos compativeis com todos os navegadores MP3 WAV OGG-->
+    <h2>outra forma de adicionar audio sem problemas</h2>
+    <audio preload="metadata" controls loop><!--lembrando que com a tag source, o site vai carregar a primeira opção se nao for compativel com a primeira ele vai tentar as outras embaixo, ele sempre prioriza o primeiro(o mais em cima)-->
+        <source src="midias/Rate The Rizz - The Soundlings.mp3" type="audio/mpeg">
+        <source src="midias/Rate The Rizz - The Soundlings.ogg" type="audio/ogg">
+        <source src="midias/Rate The Rizz - The Soundlings.wav" type="audio/wav"><!--priorizar nao usar wav, pois é muito pesado para o site-->
+        <p>Infelizmente seu navegor não consegue reproduzir esse audio. <a href="midias/Rate The Rizz - The Soundlings.mp3">Clique aqui para baixar o arquivo do mp3</a></p>
+    </audio>
+</body>
+</html>

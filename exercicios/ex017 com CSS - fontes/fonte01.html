@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes CSS</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+         body{
+            font-family: 'work sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas(recomendado usar PX)
+            cm(centímetro), mm(milimetro),in(polegada), px(pixel), pt(ponto), pc(paica)  
+
+            Medidas relativas (recomendado usar EM)
+            em(tamanho relativo da fonte), ex(relativo a altura da fonte), rem(relativo a fonte do body), vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: em;
+            font-weight: normal;/*indica o peso da fonte*/
+            /*lighter, normal, bold, bolder*/
+        }
+
+        h1, h2 {
+            /* 
+            font-family: 'work sans',sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            
+            Para incurtar o codido sem precisar colocar como ta em cima
+    
+            shorthand font, fazer na ordem -> font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 3em 'word sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'word sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat iure eveniet consequatur tempore quibusdam laborum natus eligendi obcaecati aliquid. Amet reiciendis harum rerum commodi minus eum adipisci enim esse reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis beatae labore harum commodi iste maiores esse doloribus iure! Minima cum omnis quod odit ad nesciunt perspiciatis vel! Ab, dolor corporis!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, amet totam! Numquam, debitis quibusdam similique placeat explicabo quod. Quidem ad quasi error inventore iure sequi quae, unde temporibus repellat suscipit!</p>
+    <h2>subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla ad eos cum reprehenderit ut fugit provident nisi consectetur aliquam animi itaque porro exercitationem voluptate enim, repellat voluptatem explicabo repudiandae.</p>
+</body>
+</html>
